@@ -26,3 +26,19 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+# Generated website archives (recreated at runtime) — keep the folder, not its contents
+public/sites/*
+!public/sites/.gitkeep
+
+# Downloaded site mirrors land at the project root as <hostname>/ folders and
+# are not part of the app — don't commit wget output.
+
+# Design reference (not part of the app)
+rebate-cash.jpg
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

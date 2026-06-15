@@ -5,20 +5,16 @@ module.exports = (io) => {
   io.on('connection', function (socket) {
     socket.on('request', function (data) {
       console.log("Request connection received %s", data.token);
-      wget(io, data);
+      if (socket.wgetProcess) {
+        try {
+          socket.wgetProcess.kill();
+        } catch (e) {}
+      }
+      socket.wgetProcess = wget(io, data, socket);
     });
 
     socket.on('disconnect', function () {
-      console.log("User disconnected");
-      // Stop the wget process and remove partially downloaded files
-      if (socket.wgetProcess) {
-        socket.wgetProcess.kill();
-        // Add code to remove partially downloaded files
-      }
-      // Stop the archiving process if the user disconnects
-      if (socket.archiverProcess) {
-        socket.archiverProcess.abort();
-      }
+      console.log("User disconnected, keeping processes running to allow automatic resume on reconnect.");
     });
   });
 };

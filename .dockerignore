@@ -1,0 +1,27 @@
+# Dependencies (reinstalled in the image)
+node_modules
+npm-debug.log*
+
+# Git / CI
+.git
+.github
+
+# Downloaded test-site mirrors — not part of the app
+aeline.webflow.io
+boost.framer.website
+cofounder.co
+luzen-temlis.webflow.io
+nexbit-temlis.webflow.io
+revex-template.webflow.io
+sakuga.webflow.io
+stayli.framer.website
+thaithavorn-th.com
+www.gmax.co.th
+
+# Generated archives (recreated at runtime)
+public/sites/*.zip
+
+# Large / dev-only assets not needed to run
+public/Record.gif
+rebate-cash.jpg
+*.log

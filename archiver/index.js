@@ -51,5 +51,5 @@ archive.directory('./'+file,false);
 // 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand
 archive.finalize();
 
- 
+return archive;
 }

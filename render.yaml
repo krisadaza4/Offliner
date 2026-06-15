@@ -1,0 +1,14 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploy: push this repo to your own GitHub/GitLab, then in the Render
+# dashboard choose "New +" → "Blueprint" and point it at the repo.
+services:
+  - type: web
+    name: website-downloader
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production

@@ -2,7 +2,8 @@
 
 **Take any website offline.** Mirror a complete site — every page, stylesheet, script, font and image — and get it back as a single, ready-to-open ZIP. No account, no limits.
 
-![Offliner demo](public/Record.gif)
+![Offliner demo](public/<img width="1280" height="820" alt="website-downloader-screenshot" src="https://github.com/user-attachments/assets/9d4fd8f6-22b7-4821-acd0-f4b6013950e9" />
+)
 
 > Built on a finely-tuned `wget` mirror + `archiver`, with a live progress console streamed over Socket.io and an immersive three.js / GSAP frontend.
 

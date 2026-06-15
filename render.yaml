@@ -3,7 +3,7 @@
 # dashboard choose "New +" → "Blueprint" and point it at the repo.
 services:
   - type: web
-    name: website-downloader
+    name: offliner
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile

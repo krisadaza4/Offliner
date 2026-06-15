@@ -1,5 +1,5 @@
-## Complete Website Downloader 💾
-Download the complete source code of any website (including all assets) 🔨.
+# Offliner 💾
+Take any website offline. Download the complete source code of any website (including all assets) 🔨.
 
 👉 Live Demo: https://website-downloader.onrender.com
 
@@ -11,7 +11,7 @@ Download the complete source code of any website (including all assets) 🔨.
 </div>
 
 ## Description 📒
- Website downloader works with `wget` and `archiver` to download all websites assets and compress then sends it back to the user through socket channel
+ Offliner works with `wget` and `archiver` to download all websites assets and compress then sends it back to the user through socket channel
  
  **wget params the being used**
  

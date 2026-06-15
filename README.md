@@ -4,7 +4,8 @@
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-offliner.onrender.com-2f6bff?style=for-the-badge&logo=render&logoColor=white)](https://offliner.onrender.com)
 
-<img width="1280" height="820" alt="Offliner — take any website offline" src="https://github.com/user-attachments/assets/9d4fd8f6-22b7-4821-acd0-f4b6013950e9" />
+<img width="1912" height="914" alt="screenshot-1781522722053" src="https://github.com/user-attachments/assets/359eaecb-1c93-4fe8-b8eb-96a46f698973" />
+
 
 > Built on a finely-tuned `wget` mirror + `archiver`, with a live progress console streamed over Socket.io and an immersive three.js / GSAP frontend.
 
